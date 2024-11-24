@@ -69,7 +69,7 @@ export default {
   position: absolute;
   width: 100px;
   height: 100px;
-  background: url("../assets/puppies_photos/paw.png") no-repeat center;
+  background: url("../assets/images/paw.png") no-repeat center;
   background-size: contain;
   opacity: 1; /* Полупрозрачные лапки */
   filter: blur(2px); /* Лёгкий блюр */
