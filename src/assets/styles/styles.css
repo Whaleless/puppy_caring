@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Piazzolla:opsz,wght@8..30,100&display=swap');
+@font-face {
+    font-family: 'TransformaScript';
+    src: url("../fonts/TransformaScript.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #e3eeff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Основная обертка */
+#app {
+    height: 100%;
+    margin: 15px auto;
+}
+
+/* Заголовки */
+header h1,
+h2,
+h3 {
+    color: #4a4e69; /* Глубокий серо-лавандовый для заголовков */
+    font-family: "TransformaScript", sans-serif;
+}
+
+.subtitle {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+h3:hover {
+    color: #6c757d; /* Оттенок серого при наведении */
+}
+
+/* Общий стиль для секций */
+section {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Таймлайн */
+.timeline-event {
+    padding: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d9e6;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.timeline-event h3 {
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    color: #3a3d4d;
+}
+
+.timeline-event p {
+    color: #666;
+}
+
+/* Стили FAQ */
+.faq-item {
+    margin-bottom: 12px;
+    background-color: #f6f9fc; /* Очень светлый голубой фон */
+    border-radius: 10px;
+    border: 1px solid #d0dae3;
+    transition: background-color 0.3s;
+}
+
+.faq-item h3 {
+    font-size: 1.2em;
+}
+
+.faq-item p {
+    margin-top: 10px;
+    color: #555;
+}
+
+.faq-item:hover {
+    background-color: #e4ebf2; /* Оттенок голубого при наведении */
+}
+
+#shadow-host-companion {
+    display: none !important;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+    #app {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+}
