@@ -22,7 +22,16 @@
               Пол: {{ selectedPuppy.gender === "male" ? "Мальчик" : "Девочка" }}
             </p>
             <p>Возраст: {{ stringedAge }}</p>
-            <p>Дата рождения: {{ selectedPuppy.birthDate }}</p>
+            <p>
+              Дата рождения:
+              {{
+                new Intl.DateTimeFormat("ru-RU", {
+                  day: "2-digit",
+                  month: "2-digit",
+                  year: "numeric",
+                }).format(new Date(selectedPuppy.birthDate))
+              }}
+            </p>
           </div>
         </div>
       </section>
